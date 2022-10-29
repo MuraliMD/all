@@ -1,0 +1,437 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"href="{% static 'fav.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/2yr4.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Murali </title>
+    <script>
+        function validateForm() {
+          var x = document.forms["myForm"]["sub1","sub2","sub3","sub4","sub5","sub6","sub7"
+          ,"sub8","lab1","lab2","lab3","lab4","lab5","lab6"].value;
+          if (x == "" || x == null) {
+            alert("Some Grade Point is Missing Checkit out!");
+            return false;
+          }
+        }
+        </script>
+</head>
+<body>
+    <div class="topic">
+    <h1>CGPA CALCULATION FOR 1ST SEMESTER TO 4TH SEMESTER</h1>
+    </div>
+
+    <form action="it2ndyr4R">
+        {% csrf_token %}
+
+        <div class="sem1">
+            <h1>SEMESTER 1</h1>
+            <ul>
+            <h2>THEORY PAPERS</h2>
+            <div class="subject1">
+            Mathematic 1 = 
+            <input type="radio" id="sub1" name="sub1" value="10"/>S
+            <input type="radio" id="sub1" name="sub1" value="9"/>A
+            <input type="radio" id="sub1" name="sub1" value="8"/>B
+            <input type="radio" id="sub1" name="sub1" value="7"/>C
+            <input type="radio" id="sub1" name="sub1" value="6"/>D
+            <input type="radio" id="sub1" name="sub1" value="5"/>E
+            <input type="radio" id="sub1" name="sub1" value="0"/>F
+            <br>
+        
+            Physics = 
+            <input type="radio" id="sub2" name="sub2" value="10"/>S
+            <input type="radio" id="sub2" name="sub2" value="9"/>A
+            <input type="radio" id="sub2" name="sub2" value="8"/>B
+            <input type="radio" id="sub2" name="sub2" value="7"/>C
+            <input type="radio" id="sub2" name="sub2" value="6"/>D 
+            <input type="radio" id="sub2" name="sub2" value="5"/>E
+            <input type="radio" id="sub2" name="sub2" value="0"/>F
+        <br>
+        
+            Chemistry = 
+            <input type="radio" id="sub3" name="sub3" value="10"/>S
+            <input type="radio" id="sub3" name="sub3" value="9"/>A
+            <input type="radio" id="sub3" name="sub3" value="8"/>B
+            <input type="radio" id="sub3" name="sub3" value="7"/>C
+            <input type="radio" id="sub3" name="sub3" value="6"/>D
+            <input type="radio" id="sub3" name="sub3" value="5"/>E
+            <input type="radio" id="sub3" name="sub3" value="0"/>F
+            <br>
+            Basic Electrical & Electronic Engineering = 
+            <input type="radio" id="sub4" name="sub4" value="10"/>S
+            <input type="radio" id="sub4" name="sub4" value="9"/>A
+            <input type="radio" id="sub4" name="sub4" value="8"/>B
+            <input type="radio" id="sub4" name="sub4" value="7"/>C
+            <input type="radio" id="sub4" name="sub4" value="6"/>D
+            <input type="radio" id="sub4" name="sub4" value="5"/>E
+            <input type="radio" id="sub4" name="sub4" value="0"/>F
+            <br>
+        
+            Engineering Thermodynamics = 
+            <input type="radio" id="sub5" name="sub5" value="10"/>S
+            <input type="radio" id="sub5" name="sub5" value="9"/>A
+            <input type="radio" id="sub5" name="sub5" value="8"/>B
+            <input type="radio" id="sub5" name="sub5" value="7"/>C
+            <input type="radio" id="sub5" name="sub5" value="6"/>D
+            <input type="radio" id="sub5" name="sub5" value="5"/>E
+            <input type="radio" id="sub5" name="sub5" value="0"/>F
+            <br>
+        
+            Computer Programming = 
+            <input type="radio" id="sub6" name="sub6" value="10"/>S
+            <input type="radio" id="sub6" name="sub6" value="9"/>A
+            <input type="radio" id="sub6" name="sub6" value="8"/>B
+            <input type="radio" id="sub6" name="sub6" value="7"/>C
+            <input type="radio" id="sub6" name="sub6" value="6"/>D
+            <input type="radio" id="sub6" name="sub6" value="5"/>E
+            <input type="radio" id="sub6" name="sub6" value="0"/>F
+            <br>
+            <br>
+            </div>
+        
+            <h2>PRACTICAL PAPERS</h2>
+            <div class="subject1">
+            Computer Programming Lab = 
+            <input type="radio" id="lab1" name="lab1" value="10"/>S
+            <input type="radio" id="lab1" name="lab1" value="9"/>A
+            <input type="radio" id="lab1" name="lab1" value="8"/>B
+            <input type="radio" id="lab1" name="lab1" value="7"/>C
+            <input type="radio" id="lab1" name="lab1" value="6"/>D
+            <input type="radio" id="lab1" name="lab1" value="5"/>E
+            <input type="radio" id="lab1" name="lab1" value="0"/>F
+          <br>
+            Engineering Graphics Lab = 
+            <input type="radio" id="lab2" name="lab2" value="10"/>S
+            <input type="radio" id="lab2" name="lab2" value="9"/>A
+            <input type="radio" id="lab2" name="lab2" value="8"/>B
+            <input type="radio" id="lab2" name="lab2" value="7"/>C
+            <input type="radio" id="lab2" name="lab2" value="6"/>D
+            <input type="radio" id="lab2" name="lab2" value="5"/>E
+            <input type="radio" id="lab2" name="lab2" value="0"/>F
+          <br>
+        
+            Basic Electrical & Electronic Engineering Lab = 
+            <input type="radio" id="lab3" name="lab3" value="10"/>S
+            <input type="radio" id="lab3" name="lab3" value="9"/>A
+            <input type="radio" id="lab3" name="lab3" value="8"/>B
+            <input type="radio" id="lab3" name="lab3" value="7"/>C
+            <input type="radio" id="lab3" name="lab3" value="6"/>D
+            <input type="radio" id="lab3" name="lab3" value="5"/>E
+            <input type="radio" id="lab3" name="lab3" value="0"/>F
+            <br>
+            </ul></hr>
+            </div>
+            </div>
+            </div>
+            
+        
+        
+
+    <div class="sem2">
+    <h1>SEMESTER 2</h1>
+<ul>
+    <h2>THEORY PAPERS</h2>
+    <div class="subject1">
+    Mathematics 2 = 
+    <input type="radio" id="sub7" name="sub7" value="10"/>S
+    <input type="radio" id="sub7" name="sub7" value="9"/>A
+    <input type="radio" id="sub7" name="sub7" value="8"/>B
+    <input type="radio" id="sub7" name="sub7" value="7"/>C
+    <input type="radio" id="sub7" name="sub7" value="6"/>D
+    <input type="radio" id="sub7" name="sub7" value="5"/>E
+    <input type="radio" id="sub7" name="sub7" value="0"/>F
+    <br>
+    Material Science = 
+    <input type="radio" id="sub8" name="sub8" value="10"/>S
+    <input type="radio" id="sub8" name="sub8" value="9"/>A
+    <input type="radio" id="sub8" name="sub8" value="8"/>B
+    <input type="radio" id="sub8" name="sub8" value="7"/>C
+    <input type="radio" id="sub8" name="sub8" value="6"/>D
+    <input type="radio" id="sub8" name="sub8" value="5"/>E
+    <input type="radio" id="sub8" name="sub8" value="0"/>F
+    <br>
+    Environmental Science = 
+    <input type="radio" id="sub9" name="sub9" value="10"/>S
+    <input type="radio" id="sub9" name="sub9" value="9"/>A
+    <input type="radio" id="sub9" name="sub9" value="8"/>B
+    <input type="radio" id="sub9" name="sub9" value="7"/>C
+    <input type="radio" id="sub9" name="sub9" value="6"/>D
+    <input type="radio" id="sub9" name="sub9" value="5"/>E
+    <input type="radio" id="sub9" name="sub9" value="0"/>F
+    <br>
+    Basic Civil And Mechanical Engineering = 
+    <input type="radio" id="sub10" name="sub10" value="10"/>S
+    <input type="radio" id="sub10" name="sub10" value="9"/>A
+    <input type="radio" id="sub10" name="sub10" value="8"/>B
+    <input type="radio" id="sub10" name="sub10" value="7"/>C
+    <input type="radio" id="sub10" name="sub10" value="6"/>D
+    <input type="radio" id="sub10" name="sub10" value="5"/>E
+    <input type="radio" id="sub10" name="sub10" value="0"/>F
+    <br>
+    Engineering Mechanics = 
+    <input type="radio" id="sub11" name="sub11" value="10"/>S
+    <input type="radio" id="sub11" name="sub11" value="9"/>A
+    <input type="radio" id="sub11" name="sub11" value="8"/>B
+    <input type="radio" id="sub11" name="sub11" value="7"/>C
+    <input type="radio" id="sub11" name="sub11" value="6"/>D
+    <input type="radio" id="sub11" name="sub11" value="5"/>E
+    <input type="radio" id="sub11" name="sub11" value="0"/>F
+    <br>
+    
+    Communicative English = 
+    <input type="radio" id="sub12" name="sub12" value="10"/>S
+    <input type="radio" id="sub12" name="sub12" value="9"/>A
+    <input type="radio" id="sub12" name="sub12" value="8"/>B
+    <input type="radio" id="sub12" name="sub12" value="7"/>C
+    <input type="radio" id="sub12" name="sub12" value="6"/>D
+    <input type="radio" id="sub12" name="sub12" value="5"/>E
+    <input type="radio" id="sub12" name="sub12" value="0"/>F
+    <br>
+    </div>
+
+    <h2>PRACTICAL PAPERS</h2>
+    <div class="subject1">
+    Physics Lab = 
+    <input type="radio" id="lab4" name="lab4" value="10"/>S
+    <input type="radio" id="lab4" name="lab4" value="9"/>A
+    <input type="radio" id="lab4" name="lab4" value="8"/>B
+    <input type="radio" id="lab4" name="lab4" value="7"/>C
+    <input type="radio" id="lab4" name="lab4" value="6"/>D
+    <input type="radio" id="lab4" name="lab4" value="5"/>E
+    <input type="radio" id="lab4" name="lab4" value="0"/>F
+    <br>
+
+    Chemistry Lab =
+    <input type="radio" id="lab5" name="lab5" value="10"/>S
+    <input type="radio" id="lab5" name="lab5" value="9"/>A
+    <input type="radio" id="lab5" name="lab5" value="8"/>B
+    <input type="radio" id="lab5" name="lab5" value="7"/>C
+    <input type="radio" id="lab5" name="lab5" value="6"/>D
+    <input type="radio" id="lab5" name="lab5" value="5"/>E
+    <input type="radio" id="lab5" name="lab5" value="0"/>F
+    <br>
+
+    Workshop Practice =
+    <input type="radio" id="lab6" name="lab6" value="10"/>S
+    <input type="radio" id="lab6" name="lab6" value="9"/>A
+    <input type="radio" id="lab6" name="lab6" value="8"/>B
+    <input type="radio" id="lab6" name="lab6" value="7"/>C
+    <input type="radio" id="lab6" name="lab6" value="6"/>D
+    <input type="radio" id="lab6" name="lab6" value="5"/>E
+    <input type="radio" id="lab6" name="lab6" value="0"/>F
+    <br>
+</div>
+
+</div>
+</div>
+
+    <div class="sem3">
+    <h1>SEMESTER 3</h1>
+<ul>
+    <h2>THEORY PAPERS</h2>
+    <div class="subject1">
+    Mathematic 3 =
+    <input type="radio" id="sub13" name="sub13" value="10"/>S
+    <input type="radio" id="sub13" name="sub13" value="9"/>A
+    <input type="radio" id="sub13" name="sub13" value="8"/>B
+    <input type="radio" id="sub13" name="sub13" value="7"/>C
+    <input type="radio" id="sub13" name="sub13" value="6"/>D
+    <input type="radio" id="sub13" name="sub13" value="5"/>E
+    <input type="radio" id="sub13" name="sub13" value="0"/>F
+    <br>
+
+    Electronic Devices and Circuits =
+    <input type="radio" id="sub14" name="sub14" value="10"/>S
+    <input type="radio" id="sub14" name="sub14" value="9"/>A
+    <input type="radio" id="sub14" name="sub14" value="8"/>B
+    <input type="radio" id="sub14" name="sub14" value="7"/>C
+    <input type="radio" id="sub14" name="sub14" value="6"/>D
+    <input type="radio" id="sub14" name="sub14" value="5"/>E
+    <input type="radio" id="sub14" name="sub14" value="0"/>F
+    <br>
+
+    Data Structures =
+    <input type="radio" id="sub15" name="sub15" value="10"/>S
+    <input type="radio" id="sub15" name="sub15" value="9"/>A
+    <input type="radio" id="sub15" name="sub15" value="8"/>B
+    <input type="radio" id="sub15" name="sub15" value="7"/>C
+    <input type="radio" id="sub15" name="sub15" value="6"/>D
+    <input type="radio" id="sub15" name="sub15" value="5"/>E
+    <input type="radio" id="sub15" name="sub15" value="0"/>F
+    <br>
+
+    Object Oriented Programming =
+    <input type="radio" id="sub16" name="sub16" value="10"/>S
+    <input type="radio" id="sub16" name="sub16" value="9"/>A
+    <input type="radio" id="sub16" name="sub16" value="8"/>B
+    <input type="radio" id="sub16" name="sub16" value="7"/>C
+    <input type="radio" id="sub16" name="sub16" value="6"/>D
+    <input type="radio" id="sub16" name="sub16" value="5"/>E
+    <input type="radio" id="sub16" name="sub16" value="0"/>F
+    <br>
+
+    Digital System Design =
+    <input type="radio" id="sub17" name="sub17" value="10"/>S
+    <input type="radio" id="sub17" name="sub17" value="9"/>A
+    <input type="radio" id="sub17" name="sub17" value="8"/>B
+    <input type="radio" id="sub17" name="sub17" value="7"/>C
+    <input type="radio" id="sub17" name="sub17" value="6"/>D
+    <input type="radio" id="sub17" name="sub17" value="5"/>E
+    <input type="radio" id="sub17" name="sub17" value="0"/>F
+    <br>
+
+    Computer Organization =
+    <input type="radio" id="sub18" name="sub18" value="10"/>S
+    <input type="radio" id="sub18" name="sub18" value="9"/>A
+    <input type="radio" id="sub18" name="sub18" value="8"/>B
+    <input type="radio" id="sub18" name="sub18" value="7"/>C
+    <input type="radio" id="sub18" name="sub18" value="6"/>D
+    <input type="radio" id="sub18" name="sub18" value="5"/>E
+    <input type="radio" id="sub18" name="sub18" value="0"/>F
+    <br>
+    </div>
+
+    <h2>PRACTICAL PAPERS</h2>
+    <dIV CLASS="subject1">
+    Data Structures Lab =
+    <input type="radio" id="lab7" name="lab7" value="10"/>S
+    <input type="radio" id="lab7" name="lab7" value="9"/>A
+    <input type="radio" id="lab7" name="lab7" value="8"/>B
+    <input type="radio" id="lab7" name="lab7" value="7"/>C
+    <input type="radio" id="lab7" name="lab7" value="6"/>D
+    <input type="radio" id="lab7" name="lab7" value="5"/>E
+    <input type="radio" id="lab7" name="lab7" value="0"/>F
+    <br>
+
+    Electronic Devices and Circuits Lab =
+    <input type="radio" id="lab8" name="lab8" value="10"/>S
+    <input type="radio" id="lab8" name="lab8" value="9"/>A
+    <input type="radio" id="lab8" name="lab8" value="8"/>B
+    <input type="radio" id="lab8" name="lab8" value="7"/>C
+    <input type="radio" id="lab8" name="lab8" value="6"/>D
+    <input type="radio" id="lab8" name="lab8" value="5"/>E
+    <input type="radio" id="lab8" name="lab8" value="0"/>F
+    <br>
+    Digital Lab =
+    <input type="radio" id="lab9" name="lab9" value="10"/>S
+    <input type="radio" id="lab9" name="lab9" value="9"/>A
+    <input type="radio" id="lab9" name="lab9" value="8"/>B
+    <input type="radio" id="lab9" name="lab9" value="7"/>C
+    <input type="radio" id="lab9" name="lab9" value="6"/>D
+    <input type="radio" id="lab9" name="lab9" value="5"/>E
+    <input type="radio" id="lab9" name="lab9" value="0"/>F
+    <br></ul>
+</hr>
+</div>
+</div>
+</dIV>
+
+<div class="sem4">
+    <h1>SEMESTER 4</h1><ul>
+        <h2>THEORY PAPERS</h2>
+        <div class="subject1">
+    Mathematic 4 = 
+    <input type="radio" id="sub19" name="sub19" value="10"/>S
+    <input type="radio" id="sub19" name="sub19" value="9"/>A
+    <input type="radio" id="sub19" name="sub19" value="8"/>B
+    <input type="radio" id="sub19" name="sub19" value="7"/>C
+    <input type="radio" id="sub19" name="sub19" value="6"/>D
+    <input type="radio" id="sub19" name="sub19" value="5"/>E
+    <input type="radio" id="sub19" name="sub19" value="0"/>F
+    <br>
+    Communication Engineering 1 = 
+    <input type="radio" id="sub20" name="sub20" value="10"/>S
+    <input type="radio" id="sub20" name="sub20" value="9"/>A
+    <input type="radio" id="sub20" name="sub20" value="8"/>B
+    <input type="radio" id="sub20" name="sub20" value="7"/>C
+    <input type="radio" id="sub20" name="sub20" value="6"/>D
+    <input type="radio" id="sub20" name="sub20" value="5"/>E
+    <input type="radio" id="sub20" name="sub20" value="0"/>F
+    <br>
+    Design & Analysis of Algorithms =
+    <input type="radio" id="sub21" name="sub21" value="10"/>S
+    <input type="radio" id="sub21" name="sub21" value="9"/>A
+    <input type="radio" id="sub21" name="sub21" value="8"/>B
+    <input type="radio" id="sub21" name="sub21" value="7"/>C
+    <input type="radio" id="sub21" name="sub21" value="6"/>D
+    <input type="radio" id="sub21" name="sub21" value="5"/>E
+    <input type="radio" id="sub21" name="sub21" value="0"/>F
+    <br>
+    Microprocessors & Microcontrollers =
+    <input type="radio" id="sub22" name="sub22" value="10"/>S
+    <input type="radio" id="sub22" name="sub22" value="9"/>A
+    <input type="radio" id="sub22" name="sub22" value="8"/>B
+    <input type="radio" id="sub22" name="sub22" value="7"/>C
+    <input type="radio" id="sub22" name="sub22" value="6"/>D
+    <input type="radio" id="sub22" name="sub22" value="5"/>E
+    <input type="radio" id="sub22" name="sub22" value="0"/>F
+    <br>
+    Java Programming =
+    <input type="radio" id="sub23" name="sub23" value="10"/>S
+    <input type="radio" id="sub23" name="sub23" value="9"/>A
+    <input type="radio" id="sub23" name="sub23" value="8"/>B
+    <input type="radio" id="sub23" name="sub23" value="7"/>C
+    <input type="radio" id="sub23" name="sub23" value="6"/>D
+    <input type="radio" id="sub23" name="sub23" value="5"/>E
+    <input type="radio" id="sub23" name="sub23" value="0"/>F    
+<br>
+    System Software =
+    <input type="radio" id="sub24" name="sub24" value="10"/>S
+    <input type="radio" id="sub24" name="sub24" value="9"/>A
+    <input type="radio" id="sub24" name="sub24" value="8"/>B
+    <input type="radio" id="sub24" name="sub24" value="7"/>C
+    <input type="radio" id="sub24" name="sub24" value="6"/>D
+    <input type="radio" id="sub24" name="sub24" value="5"/>E
+    <input type="radio" id="sub24" name="sub24" value="0"/>F
+    <br>
+        </div>
+    <h2>PRACTICAL PAPERS</h2>
+    <div class="subject1">
+
+    Algorithm Lab =
+    <input type="radio" id="lab10" name="lab10" value="10"/>S
+    <input type="radio" id="lab10" name="lab10" value="9"/>A
+    <input type="radio" id="lab10" name="lab10" value="8"/>B
+    <input type="radio" id="lab10" name="lab10" value="7"/>C
+    <input type="radio" id="lab10" name="lab10" value="6"/>D
+    <input type="radio" id="lab10" name="lab10" value="5"/>E
+    <input type="radio" id="lab10" name="lab10" value="0"/>F
+    <br>
+    
+    Microprocessors & Microcontrollers Lab =
+    <input type="radio" id="lab11" name="lab11" value="10"/>S
+    <input type="radio" id="lab11" name="lab11" value="9"/>A
+    <input type="radio" id="lab11" name="lab11" value="8"/>B
+    <input type="radio" id="lab11" name="lab11" value="7"/>C
+    <input type="radio" id="lab11" name="lab11" value="6"/>D
+    <input type="radio" id="lab11" name="lab11" value="5"/>E
+    <input type="radio" id="lab11" name="lab11" value="0"/>F
+    <br>
+    Java Lab =
+    <input type="radio" id="lab12" name="lab12" value="10"/>S
+    <input type="radio" id="lab12" name="lab12" value="9"/>A
+    <input type="radio" id="lab12" name="lab12" value="8"/>B
+    <input type="radio" id="lab12" name="lab12" value="7"/>C
+    <input type="radio" id="lab12" name="lab12" value="6"/>D
+    <input type="radio" id="lab12" name="lab12" value="5"/>E
+    <input type="radio" id="lab12" name="lab12" value="0"/>F
+    <br>
+</div>
+</div>
+</div>
+
+<input type="submit" class="button">
+</form>
+
+
+
+
+
+</body>

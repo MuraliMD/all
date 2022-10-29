@@ -1,0 +1,57 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"href="{% static 'fav.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/index1.css' %}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Murali MD</title>
+</head>
+<body>
+    <div class="topic">
+    <h1>SCEINCE AND HUMANITY DEPARTMENT</h1> 
+    </div>
+
+    <h3>Select your Department</h3>
+
+    <a href="{% url '2it' %}"><button type="submit" class="btn2">IT</button></a>
+    <a href="{% url '2cse' %}"><button type="submit" class="btn3">CSE</button><br></a>
+    <a href="{% url '2eee' %}"><button type="submit" class="btn4">EEE</button><br></a>
+    <a href="{% url '2ece' %}"><button type="submit" class="btn5">ECE</button><br></a>
+    <a href="{% url '2mech' %}"><button type="submit" class="btn6">MECH</button><br></a>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+    
+            <a href="https://www.instagram.com/murali_.md/?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            
+    
+        </div>
+    
+        <div class="footer-left">
+    
+            <p class="footer-links">
+                <a class="link-1" href="#">MURALI MD</a><BR>
+                <a class="link-1" href="#">Developer</a>
+    
+                <a href="#">Designer</a>
+    
+    
+                <a href="#">About</a>
+            </p>
+    
+            <p> DEVELOPED BY MD DESGINS 2022 &copy; </p>
+        </div>
+    
+    </footer>
+    
+    
+</body>
+</html>

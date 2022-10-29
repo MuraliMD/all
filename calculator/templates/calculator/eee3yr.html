@@ -1,0 +1,30 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"href="{% static 'fav.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/it1.css' %}">
+    <title>Murali MD</title>
+</head>
+<body>
+    <div class="topic">
+    <h1>CGPA CALCULATOR</h1>
+    </div>
+    <div class="it">
+    <h1>ELECTRONICS AND ELECTRICALS ENGINEERING</h1>
+    </div>
+    <h2>Select Semester</h2><br>
+    <h3>III year</h3>
+    
+
+    <a href="{% url 'eee3yr5' %}"><button type="submit" class="btn1">5th</button><br></a>
+    <a href="{% url 'eee3yr6' %}"><button type="submit" class="btn2">6th</button><br></a>
+    
+
+
+    
+    
+</body>
+</html>
